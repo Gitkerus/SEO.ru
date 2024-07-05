@@ -1,0 +1,117 @@
+@import url(./vars.css);
+
+
+@media (min-width: 1280px){
+.modal {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    min-height: 100vh;
+}
+
+.modal-open {
+    display: flex;
+    
+}
+
+.modal__closeBtn {
+    padding: 0;
+    border: 0;
+    background-color: transparent;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.modal__closeBtn:hover {
+    cursor: pointer;
+}
+
+.modal__form {
+    padding: 60px;
+    background: #FFFFFF;
+    border-radius: 12px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.modal__form__subHeader {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+    margin-top: 12px;
+    margin-bottom: 40px;
+}
+
+.modal__form__header {
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+}
+
+.modal__form__input {
+    border-radius: 900px;
+    padding: 12px 24px;
+    border: 1px solid var(--grey-color);
+    width: 480px;
+}
+
+.modal__form__input::placeholder {
+    color: var(--grey-color);
+}
+
+
+.modal__form__info {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 24px;
+    padding-bottom: 4px;
+    border-bottom: 1px dashed var(--green-color);
+    width: fit-content;
+    color: var(--green-color);
+    margin-top: 10px;
+}
+
+.modal__form__policy {
+    margin-top: 12px;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 21px;
+    a {
+        color: var(--green-color);
+        text-decoration: none;
+    }
+}
+
+.modal__form__submit {
+    font-weight: 800;
+    font-size: 15px;
+    line-height: 28px;
+    color: #FFFFFF;
+    background: var(--red-color);
+    padding: 10px 37px;
+    border: none;
+    border-radius: 900px;
+}
+
+.modal__form__submit:hover {
+    cursor: pointer;
+}
+
+.modal__formInputWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 40px;
+}
+}
