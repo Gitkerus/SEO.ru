@@ -53,7 +53,6 @@ desktopMenuCategoryLinks.forEach((element) => {
 
 const desktopSubMenuLinks = document.querySelectorAll(".submenu__link");
 const subLinksWrappers = document.querySelectorAll(".sublinksWrapper");
-console.log(subLinksWrappers);
 
 const handleDesktopSubMenuLinksClick = (e) => {
 
