@@ -1,16 +1,3 @@
-<?php
-    require("./send-mail.php")
-?>
-<?php
-    if(isset($_POST["form_submit"])) {
-        if(empty($_POST["form_site-adress"]) || empty($_POST["form_phone"])) {
-            $response = "Заполните все обязательные поля";
-        } else {
-            $message = "Сайт клиента: {$_POST["form_site-adress"]}, <br> Контактный номер: {$_POST["form_phone"]}";
-            $response = sendMail($message);
-        }
-    }
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -191,3 +178,14 @@ if ( window.history.replaceState ) {
 
 </html>
 <?php
+    require("./send-mail.php");
+
+    if(isset($_POST["form_submit"])) {
+        if(empty($_POST["form_site-adress"]) || empty($_POST["form_phone"])) {
+            $response = "Заполните все обязательные поля";
+        } else {
+            $message = "Сайт клиента: {$_POST["form_site-adress"]}, <br> Контактный номер: {$_POST["form_phone"]}";
+            $response = sendMail($message);
+        }
+    }
+?>

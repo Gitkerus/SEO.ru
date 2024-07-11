@@ -19,7 +19,7 @@ const handleMobileNavContentClick = (event) => {
         }
 }
 
-mobileNavMenu.addEventListener("click", (e) => handleMobileNavContentClick(e) )
+mobileNavMenu?.addEventListener("click", (e) => handleMobileNavContentClick(e) )
 
 const siteContent = document.getElementById("siteContent");
 const burgerBtns = document.querySelectorAll(".header__mobileMenuBtn");

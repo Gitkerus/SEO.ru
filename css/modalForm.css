@@ -1,5 +1,12 @@
 @import url(./vars.css);
 
+.modal {
+    display: none;
+}
+
+.modal-open {
+    display: none;
+}
 
 @media (min-width: 1280px){
 .modal {
@@ -17,7 +24,6 @@
 
 .modal-open {
     display: flex;
-    
 }
 
 .modal__closeBtn {
