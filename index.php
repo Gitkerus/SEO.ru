@@ -190,4 +190,3 @@ if ( window.history.replaceState ) {
 <script src="./index.js"></script>
 
 </html>
-<?php
